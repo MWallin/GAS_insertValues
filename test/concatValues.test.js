@@ -35,6 +35,6 @@ describe( "Custom function: concatValues_", () => {
   it( "should concat array with only one value correct", () => {
     const result = concatValues_( ["AO från entreprenör"] );
 
-    expect( result ).to.equal( "('AO från entreprenör')" );
+    expect( result ).to.equal( "('AO från entreprenör')," );
   });
 });

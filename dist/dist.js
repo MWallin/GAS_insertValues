@@ -12,7 +12,7 @@ function concatValues_ ( values ) {
   const length = values.length;
 
   if ( length === 1 ) {
-    return "('" + values[0] + "')";
+    return "('" + values[0] + "'),";
   }
 
   const result = values.reduce( function ( acc, curr, index ) {
