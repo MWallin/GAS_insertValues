@@ -1,0 +1,76 @@
+{
+  "plugins": ["googleappsscript"],
+  "env": {
+    "googleappsscript/googleappsscript": true,
+    "node": true,
+    "mocha": true
+  },
+  "extends": ["eslint:recommended"],
+  "parserOptions": {
+    "ecmaVersion": 2017
+  },
+  "rules": {
+    "import/no-unresolved": 0,
+    "import/no-unassigned-import": 0,
+    "semi": ["error", "always"],
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "always",
+        "named": "always",
+        "asyncArrow": "always"
+      }
+    ],
+    "arrow-parens": 0,
+    "generator-star-spacing": 0,
+    "quotes": ["error", "double"],
+    "curly": "error",
+    "default-case": "error",
+    "no-empty-function": "error",
+    "no-loop-func": "error",
+    "no-param-reassign": "error",
+    "no-redeclare": "error",
+    "no-return-assign": ["error", "always"],
+    "vars-on-top": "error",
+    "yoda": "error",
+    "init-declarations": ["error", "always"],
+    "global-require": "error",
+    "no-mixed-requires": "error",
+    "camelcase": "error",
+    "comma-spacing": [
+      "error",
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "eol-last": "error",
+    "keyword-spacing": "error",
+    "no-lonely-if": "error",
+    "func-call-spacing": ["error", "never"],
+    "no-trailing-spaces": "off",
+    "comma-dangle": ["error", "never"],
+    "object-property-newline": "error",
+    "one-var": ["error", "never"],
+    "space-in-parens": [
+      "error",
+      "always",
+      {
+        "exceptions": ["empty", "{}"]
+      }
+    ],
+    "no-duplicate-imports": "error",
+    "no-var": "error",
+    "prefer-const": "error",
+    "key-spacing": [
+      "error",
+      {
+        "align": "colon"
+      }
+    ],
+    "no-multi-spaces": "off",
+    "no-unused-vars": "warn",
+    "no-unexpected-multiline": "error",
+    "no-unreachable": "error"
+  }
+}

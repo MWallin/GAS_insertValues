@@ -1,0 +1,10 @@
+https://stackoverflow.com/questions/20288351/debugging-a-custom-function-in-google-apps-script
+
+https://stackoverflow.com/questions/16089041/how-can-i-test-a-trigger-function-in-gas
+
+https://developers.google.com/apps-script/guides/support/troubleshooting
+
+https://gist.github.com/hlecuanda/30eb0a5f7aa20f61611d642350da5c10
+
+https://code.i-harness.com/en/q/135935f
+

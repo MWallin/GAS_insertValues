@@ -1,0 +1,12 @@
+{
+  "timeZone": "Europe/Paris",
+  "dependencies": {
+  },
+  "exceptionLogging": "STACKDRIVER",
+  "sheets": {
+    "macros": [{
+      "menuName": "InsertAndEscape",
+      "functionName": "InsertAndEscape"
+    }]
+  }
+}

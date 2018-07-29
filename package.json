@@ -1,0 +1,23 @@
+{
+  "name": "lab",
+  "version": "1.0.0",
+  "description": "",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "5.2.0",
+    "eslint-plugin-googleappsscript": "1.0.1",
+    "gulp": "3.9.1",
+    "gulp-cli": "2.0.1",
+    "gulp-concat": "2.6.1",
+    "gulp-replace": "^1.0.0",
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "publish": "npm run test && npm run build && npm run deploy",
+    "deploy": "clasp push",
+    "build": "gulp build",
+    "test": "mocha "
+  },
+  "author": "",
+  "license": "ISC"
+}

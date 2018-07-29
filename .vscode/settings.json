@@ -1,0 +1,18 @@
+{
+  "files.exclude": {
+    // Basic tooling files
+    ".vscode/": false,
+    ".eslint*": false,
+    ".gitignore": false,
+    "jsconfig.json": false,
+    "package-lock*": false,
+    "node_modules": false,
+    "README.md": false,
+    ".prettierrc": false,
+    ".clasp*": false,
+    "appsscript.json": false,
+    "gulpfile.js": false,
+    ".nyc_output": false,
+    "coverage": false
+  }
+}
