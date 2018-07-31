@@ -1,3 +1,5 @@
+These ar references from around the web that may be useful. To avoid having to google the same thing a hundred times...
+
 https://stackoverflow.com/questions/20288351/debugging-a-custom-function-in-google-apps-script
 
 https://stackoverflow.com/questions/16089041/how-can-i-test-a-trigger-function-in-gas
