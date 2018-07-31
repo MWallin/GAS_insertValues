@@ -9,7 +9,7 @@ function removeLineBreaks_ ( input ) {
   if ( typeof input === "string" ) {
     return input
       .trim()
-      .replace( /(\r\n\t|\n|\r\t)/gm, " " )
+      .replace( /\r?\n|\r/g, " " )
       .replace( / {2,}/g, " " );
   } else {
     return input;
