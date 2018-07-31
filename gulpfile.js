@@ -2,15 +2,30 @@ const gulp = require( "gulp" );
 const concat = require( "gulp-concat" );
 const replace = require( "gulp-replace" );
 
-//script paths
-const jsFiles = "src/**/*.js";
-const jsDest = "dist/";
+// Paths
+const main = "src/**/insertValues.js";
+const utils = "src/**/*_.js";
+const destination = "dist/";
 
-gulp.task( "build", function () {
+// Build all
+gulp.task( "build", ["main", "utils"] );
+
+// Build main
+gulp.task( "main", function () {
   return gulp
-    .src( jsFiles )
+    .src( main )
     .pipe( replace( /module.exports[^\n]*/g, "" ) )
     .pipe( replace( /[^\n]*= require[^\n]*/g, "" ) )
-    .pipe( concat( "dist.js" ) )
-    .pipe( gulp.dest( jsDest ) );
+    .pipe( concat( "main.js" ) )
+    .pipe( gulp.dest( destination ) );
+});
+
+// Build utils
+gulp.task( "utils", function () {
+  return gulp
+    .src( utils )
+    .pipe( replace( /module.exports[^\n]*/g, "" ) )
+    .pipe( replace( /[^\n]*= require[^\n]*/g, "" ) )
+    .pipe( concat( "utils.js" ) )
+    .pipe( gulp.dest( destination ) );
 });

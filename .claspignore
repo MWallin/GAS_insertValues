@@ -1,3 +1,4 @@
 **/**
-!dist/dist.js
+!dist/main.js
+!dist/utils.js
 !appsscript.json
