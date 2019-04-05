@@ -7,9 +7,6 @@ const main = "src/**/insertValues.js";
 const utils = "src/**/*_.js";
 const destination = "dist/";
 
-// Build all
-gulp.task( "build", ["main", "utils"] );
-
 // Build main
 gulp.task( "main", function () {
   return gulp
@@ -29,3 +26,7 @@ gulp.task( "utils", function () {
     .pipe( concat( "utils.js" ) )
     .pipe( gulp.dest( destination ) );
 });
+
+
+// Build all
+gulp.task( "build", gulp.parallel(  "main", "utils"  ) );

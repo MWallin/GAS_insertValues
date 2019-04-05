@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "devDependencies": {
-    "chai": "^4.1.2",
-    "eslint": "5.2.0",
+    "chai": "^4.2.0",
+    "eslint": "^5.16.0",
     "eslint-plugin-googleappsscript": "1.0.1",
-    "gulp": "3.9.1",
-    "gulp-cli": "2.0.1",
+    "gulp": "^4.0.0",
+    "gulp-cli": "^2.1.0",
     "gulp-concat": "2.6.1",
     "gulp-replace": "^1.0.0",
-    "mocha": "^5.2.0"
+    "mocha": "^6.0.2"
   },
   "scripts": {
     "publish": "npm run test && npm run build && npm run deploy",
