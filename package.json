@@ -10,7 +10,7 @@
     "gulp-cli": "^2.1.0",
     "gulp-concat": "2.6.1",
     "gulp-replace": "^1.0.0",
-    "mocha": "^6.0.2"
+    "mocha": "^10.2.0"
   },
   "scripts": {
     "publish": "npm run test && npm run build && npm run deploy",
